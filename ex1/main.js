@@ -4,6 +4,7 @@ const onMarkWord = () => {
   var inputEl = document.getElementById('word');
   var pEl = document.getElementById('paragraph');
   var text = inputEl.value;
+  if (text === '') return;
   var paragraph = pEl.innerHTML;
   var words = paragraph.split(' ');
   var output = '';
@@ -13,4 +14,5 @@ const onMarkWord = () => {
     else output += word + ' ';
   });
   pEl.innerHTML = output;
+  inputEl.value = '';
 };
