@@ -48,5 +48,5 @@ body {
 }
 
 .choose {
-  border: 2px #000 solid !important;
+  opacity: 0.5;
 }
