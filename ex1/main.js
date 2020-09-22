@@ -8,7 +8,7 @@ const onMarkWord = () => {
   var words = paragraph.split(' ');
   var output = '';
   words.forEach((word) => {
-    if (text === word || text === word + ',' || text === word + '.')
+    if (word.includes(text))
       output += '<span class="highlight">' + word + '</span> ';
     else output += word + ' ';
   });
