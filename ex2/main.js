@@ -30,9 +30,9 @@ const onDraw = () => {
 };
 
 const onChooseShape = (event) => {
-  event.stopPropagation();
   if (event.target.classList.contains('choose')) return;
   event.target.classList.add('choose');
+
   var deleteBtn = document.createElement('button');
   deleteBtn.innerHTML = 'Delete';
   deleteBtn.setAttribute('onclick', 'onDeleteShape()');
